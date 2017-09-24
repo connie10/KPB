@@ -1,0 +1,83 @@
+---
+layout: default
+title: Home
+project:
+  - image: /images/hydro.jpg/
+    title: HYDROPONICS SHED
+    date: 2016
+    description: Photo taken during construction
+  - image: /images/new.jpg/
+    title: NEW TRIPLEX DWELLING
+    date: 2016
+    description: Photo taken during construction
+  - image: /images/office.jpg/
+    title: OFFICE PARTITIONS
+    date: 2016
+    description: Photo taken upon Final inspection
+  - image: /images/draft.png/
+    title: NEW RESIDENCE
+    date: 2017
+    description: Proposed Elevation - Currenlty being built
+  - image: /images/pool.JPG/
+    title: POOL INSPECTION
+    date: 2017
+    description: New pool & pool fence being built
+  - image: /images/reno.jpg/
+    title: KITCHEN RENOVATION
+    date: 2016
+    description: Photo taken upon Final inspection
+---
+
+
+    <section class="cover grid-middle">
+      <div class="right col-12">
+        <a href="prices.html"><i class="fa fa-share fa-2x" aria-hidden="true"></i> Get a No Obligation FREE Quote Today!</a>
+      </div>
+      <div class="right col-12">
+        <a href="prices.html"><i class="fa fa-share fa-2x" aria-hidden="true"></i>What is the Certification Process?</a>
+      </div>
+    </section>
+    <section class="services">
+      <div class="scroll">
+        <h1>Services KP Approvals Provide</h1>
+        <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
+      </div>
+      <div class="grid-spaceBetween">
+        <div class="col-4_md-10_sm-12">
+        <h2>Certification</h2>
+        <p>From domestic and commercial Council approvals and Building permits to interpretng building codes and regulations, we want to make your certification process as simple as possible.</p>
+        </div>
+        <div class="col-4_md-10_sm-12">
+        <h2>Inspections</h2>
+        <p>Piers, finals, pool fencing, retrospective works and much more! KP Building Approvals offer building insptections for all work stages within Queensland and the Northern Territory</p>
+        </div>
+        <div class="col-4_md-10_sm-12">
+        <h2>Consultation</h2>
+        <p>KP Building Approvals offer Comprehensive building consultancy services including; alternative solutions, fire safety reports and building code interpretation and analysis.</p>
+        </div>
+      </div>
+    </section>
+    <section class="review">
+      <div class="grid">
+        <div class="col-5_md-9_sm-12">
+          <img src="/images/review1.jpg" alt="new dwelling"/>
+        </div>
+        <div class="col-7_md-10_sm-12 floatTxt">
+          <h2>What our customers say</h2>
+          <p>"We have been working with KP Building Approvals Pty Ltd for a number of years now, during that time they have been an absolute delight to deal with and they are very responsive. They have always demonstrated and conducted themselves in a professional and competent manner, cheers KP team!"<br> Nick Kastellorizios<br> Director/ Structural Engineer<br>Albright Services Group Pty Ltd</p>
+          </div>
+        </div>
+      </section>
+      <section class="project">
+        <h2>Our Projects</h2>
+        <div class="grid-spaceBetween">
+          {% for project in page.project %}
+          <div style="background-image:url('{{project.image}}')" class="col-4_md-8_sm-12 grid-center-middle tall magicfinder">
+            <div class="col magic">
+              {{project.title}}<br>
+              {{project.date}}<br>
+              {{project.description}}
+            </div>
+          </div>
+        {% endfor %}
+      </section>
